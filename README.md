@@ -31,11 +31,9 @@ Now I had to create a corresponding DNS record with my web hosting provider that
 
 ![Add Record](./img/bluehost-dns-03.png)
 
-- It takes a few minutes (up to 4 hours) for the new alias to propagate across the DNS server network. You can check the status of the CNAME request by typing 
+- It takes a few minutes (up to 4 hours) for the new alias to propagate across the DNS server network. You can check the status of the CNAME request by typing this in the terminal. 
 
     dig projects.tomkeays.com +nostats +nocomments +nocmd
-
-in the terminal. 
 
 ![Dig](./img/dig-cname.png)
 
