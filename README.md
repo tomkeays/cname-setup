@@ -13,14 +13,19 @@ The CNAME file, in my case, needed to point to [http://projects.tomkeays.com](pr
 Now I had to create a corresponding DNS record with my web hosting provider that represented the content being hosted in my GitHub Pages. 
 
 - Using cPanel in Bluehost, select **domains** and then **zone editor**. 
-- In my case, I selected the domain ‘tomkeays.com’ from the drop down menu. ![Step 3](./img/bluehost-dns-01.png)
+- In my case, I selected the domain ‘tomkeays.com’ from the drop down menu. ![zone editor](./img/bluehost-dns-01.png)
 
 - In the “**Add DNS Record**” section, I filled out the “**Host Record**” as “**projects**”, since the destination was going to be ‘projects.tomkeays.com’. 
 - The “**Type**” was set to “**CNAME**” — rather than “**A**” (“alias”) — since I’m not replacing the entire ‘tomkeays.com’ domain with GitHub Pages, just the ‘projects’ subdomain. 
-- The “**Points To**” contains “**tomkeays.github.io**” where my GitHub Pages were formerly served from.  ![Step 4](./img/bluehost-dns-02.png)
+- The “**Points To**” contains “**tomkeays.github.io**” where my GitHub Pages were formerly served from.  ![Add DNS Record](./img/bluehost-dns-02.png)
 
 - **Note:** You should not create a new subdomain in Bluehost from the **domains > subdomains** cPanel option. You only use that option when you are creating a subdomain that will be served out of a directory in your Bluehost account. 
 
-- Once you click the “**Add Record**” button, the new CNAME will appear in the list. ![Step 5](./img/bluehost-dns-03.png)
+- Once you click the “**Add Record**” button, the new CNAME will appear in the list. ![Add Record](./img/bluehost-dns-03.png)
 
-- It takes a few minutes (up to 4 hours) for the new alias to propagate across the DNS server network. 
+- It takes a few minutes (up to 4 hours) for the new alias to propagate across the DNS server network. You can check the status of the CNAME request by typing 
+
+    dig projects.tomkeays.com +nostats +nocomments +nocmd
+
+in the terminal. ![Dig](./img/dig-cname.png)
+
