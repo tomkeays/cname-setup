@@ -16,8 +16,9 @@ Now I had to create a corresponding DNS record with my web hosting provider that
 - In my case, I selected the domain ‘tomkeays.com’ from the drop down menu. ![Step 3](./img/bluehost-dns-01.png)
 
 - In the “**Add DNS Record**” section, I filled out the “**Host Record**” as “**projects**”, since the destination was going to be ‘projects.tomkeays.com’. 
-- The “**Type**” was set to “**CNAME**” (rather tha “**A**” (“alias”) since I’m not replacing the entire ‘tomkeays.com’ domain with GitHub Pages, just the ‘projects’ subdomain. 
+- The “**Type**” was set to “**CNAME**” — rather tha “**A**” (“alias”) — since I’m not replacing the entire ‘tomkeays.com’ domain with GitHub Pages, just the ‘projects’ subdomain. 
 - The “**Points To**” contains “**tomkeays.github.io**” where my GitHub Pages were formerly served from. ![Step 4](./img/bluehost-dns-02.png)
+
 - **Note:** You should not create a new subdomain in Bluehost from the **domains > subdomains** cPanel option. You only use that option when you are creating a subdomain that will be served out of a directory in your Bluehost account. 
 
 - Once you click the “**Add Record**” button, the new CNAME will appear in the list. ![Step 5](./img/bluehost-dns-03.png)
