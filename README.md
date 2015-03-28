@@ -6,7 +6,7 @@ The [GitHub Pages documentation](https://pages.github.com/) is actually quite go
 
 ## 1. Create a CNAME file
 
-The CNAME file, in my case, needed to point to [http://projects.tomkeays.com](projects.tomkeays.com). When I was ready, I added it to my [https://github.com/tomkeays/tomkeays.github.io](github.com/tomkeays/tomkeays.github.io) GitHub Pages repo. That part took effect immediately, such that going to my GitHub Pages URL, [http://tomkeays.github.io](tomkeays.github.io), immediately redirected me to [http://projects.tomkeays.com](projects.tomkeays.com). Bluehost reported there was no such server because, at this point, there wasn’t. ![CNAME file in GitHub](./img/github-cname-02.png)
+The CNAME file, in my case, needed to point to [http://projects.tomkeays.com](projects.tomkeays.com). When I was ready, I added it to my [github.com/tomkeays/tomkeays.github.io](https://github.com/tomkeays/tomkeays.github.io) GitHub Pages repo. That part took effect immediately, such that going to my GitHub Pages URL, [http://tomkeays.github.io](tomkeays.github.io), immediately redirected me to [http://projects.tomkeays.com](projects.tomkeays.com). Bluehost reported there was no such server because, at this point, there wasn’t. ![CNAME file in GitHub](./img/github-cname-02.png)
 
 ## 2. Create DNS record in Bluehost
 
